@@ -1,0 +1,45 @@
+- hosts: localhost
+  vars:
+    bucket_name: www.seporaitis.lt
+    aws_profile_name: seporaitis_lt
+  tasks:
+    - name: clear _site
+      file:
+        path: _site
+        recurse: yes
+    - name: build website
+      command: jekyll build
+    - name: find all posts
+      find:
+        paths: "./_site"
+        patterns: "*.html"
+        file_type: "file"
+        recurse: yes
+      register: list_of_posts
+    - name: create directories for posts
+      file:
+        path: '{{ item.path | replace(".html", "") }}'
+        state: directory
+        mode: 0755
+      with_items:
+        - '{{ list_of_posts.files }}'
+    - name: create index files for posts
+      copy:
+        src: '{{ item.path }}'
+        dest: '{{ item.path | replace(".html", "") }}/index.html'
+      with_items:
+        - '{{ list_of_posts.files }}'
+    - name: upload to s3
+      command: aws s3 cp _site/ s3://{{ bucket_name }}/ --recursive --profile {{ aws_profile_name }}
+    - name: invalidate cloudfront
+      command: >
+        aws cloudfront create-invalidation
+          --profile {{ aws_profile_name }}
+          --distribution-id {{ cloudfront_distribution_id }}
+          --invalidation-batch '{
+            "Paths": {
+              "Quantity": 1,
+              "Items": [ "/*" ]
+            },
+            "CallerReference": "blog-deploy-{{ ansible_date_time.epoch }}"
+          }'
