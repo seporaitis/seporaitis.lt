@@ -1,37 +1,30 @@
-title:            Balzac
-tagline:          A beautiful theme.
+title:            Julius Šėporaitis
+tagline:          Pamastymai ir Pabambėjimai
 description:      Describe your website.
 #Comment out url when working locally to resolve base urls correctly
-url: http://jekyll.gtat.me
+url: http://www.seporaitis.lt
+
 
 # Owner/author information
 owner:
-  name:           Cole Townsend
+  name:           Julius Šėporaitis
   avatar:         avatar.png
-  bio:            "Aesthete & Athlete"
-  email:          cole@coletownsend.com
-  twitter:        ctrunsthis        
-  github:         coletownsend       
-  instagram:      ctrunsthis     
-  dribbble:       coletownsend
-  disqus:         balzac
+  bio:            "Smalsus Žmogus"
+  email:          julius@seporaitis.net
+  twitter:        seporaitis
+  github:         seporaitis
+  disqus:         seporaitis-lt
   # Plug in your disqus shortname!
-  
+
 
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
-    url: /about
-  - title: Github
-    url: https://github.com/ColeTownsend/Balzac-for-Jekyll
-    external: true
-  - title: Cole Who?
-    url: http://coletownsend.com
-    external: true
+  - title: Apie
+    url: /apie
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Europe/London
 future:      true
 pygments:    true
 markdown:    kramdown
@@ -44,14 +37,14 @@ kramdown:
   use_coderay: false
 
   coderay:
-    coderay_line_numbers: 
+    coderay_line_numbers:
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: class
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+permalink:   /:categories/:year/:month/:day/:title
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
