@@ -232,7 +232,7 @@ blockquote, blockquote p {
 }
 /************ Basic *************/
 body {
-  font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", serif;
+  font-family: "Crimson Text", "Calendas Plus", "Hoefler Text", "Georgia", serif;
   color: #3b3b3b;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
@@ -244,7 +244,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", serif;
+  font-family: "Crimson Text", "Calendas Plus", "Hoefler Text", "Georgia", serif;
 }
 
 p {
@@ -356,7 +356,7 @@ input {
   background: none;
   outline: none;
   width: 100%;
-  font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", serif;
+  font-family: "Crimson Text", "Calendas Plus", "Hoefler Text", "Georgia", serif;
 }
 .archive input:focus {
   background: white;
@@ -572,6 +572,10 @@ header.site-header nav ul li a:hover {
 }
 .article .featured-image img {
   max-height: 800px;
+}
+.article .featured-author {
+  float: right;
+  margin-right: 5px;
 }
 .article header {
   margin: 66px 0 33px 0;
@@ -789,7 +793,7 @@ header.site-header nav ul li a:hover {
   text-align: center;
   display: block;
   margin: 0 auto;
-  width: 76px;
+  width: 99px;
   font-size: 16px;
   font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", "Arial", sans-serif;
   text-transform: uppercase;

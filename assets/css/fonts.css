@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('../fonts/crimson_text/CrimsonText-Roman-webfont.eot');
+    src: url('../fonts/crimson_text/CrimsonText-Roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/crimson_text/CrimsonText-Roman-webfont.woff2') format('woff2'),
+         url('../fonts/crimson_text/CrimsonText-Roman-webfont.woff') format('woff'),
+         url('../fonts/crimson_text/CrimsonText-Roman-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('../fonts/crimson_text/CrimsonText-Bold-webfont.eot');
+    src: url('../fonts/crimson_text/CrimsonText-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/crimson_text/CrimsonText-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/crimson_text/CrimsonText-Bold-webfont.woff') format('woff'),
+         url('../fonts/crimson_text/CrimsonText-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/crimson_text/CrimsonText-Bold-webfont.svg#crimson_textbold') format('svg');
+    font-weight: 700;
+    font-style: bold;
+
+}
+
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('../fonts/crimson_text/CrimsonText-BoldItalic-webfont.eot');
+    src: url('../fonts/crimson_text/CrimsonText-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/crimson_text/CrimsonText-BoldItalic-webfont.woff2') format('woff2'),
+         url('../fonts/crimson_text/CrimsonText-BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/crimson_text/CrimsonText-BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/crimson_text/CrimsonText-BoldItalic-webfont.svg#crimson_textbold_italic') format('svg');
+    font-weight: 700;
+    font-style: bold;
+
+}
+
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('../fonts/crimson_text/CrimsonText-Italic-webfont.eot');
+    src: url('../fonts/crimson_text/CrimsonText-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/crimson_text/CrimsonText-Italic-webfont.woff2') format('woff2'),
+         url('../fonts/crimson_text/CrimsonText-Italic-webfont.woff') format('woff'),
+         url('../fonts/crimson_text/CrimsonText-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/crimson_text/CrimsonText-Italic-webfont.svg#crimson_textitalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('../fonts/crimson_text/CrimsonText-Semibold-webfont.eot');
+    src: url('../fonts/crimson_text/CrimsonText-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/crimson_text/CrimsonText-Semibold-webfont.woff2') format('woff2'),
+         url('../fonts/crimson_text/CrimsonText-Semibold-webfont.woff') format('woff'),
+         url('../fonts/crimson_text/CrimsonText-Semibold-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: bold;
+
+}
+
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('../fonts/crimson_text/CrimsonText-SemiboldItalic-webfont.eot');
+    src: url('../fonts/crimson_text/CrimsonText-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/crimson_text/CrimsonText-SemiboldItalic-webfont.woff2') format('woff2'),
+         url('../fonts/crimson_text/CrimsonText-SemiboldItalic-webfont.woff') format('woff'),
+         url('../fonts/crimson_text/CrimsonText-SemiboldItalic-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+
+}

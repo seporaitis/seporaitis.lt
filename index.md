@@ -1,7 +1,7 @@
 ---
 layout: home
-title: "Recent Posts"
-tags: [Jekyll, theme, responsive, blog, template]
+title: "Mintys"
+tags: [pradžia]
 image:
   feature: typewriter.jpg
 ---
